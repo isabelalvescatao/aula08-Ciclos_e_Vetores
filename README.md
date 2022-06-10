@@ -10,7 +10,7 @@
 
 ## 2. Responda com base na sua pesquisa, quais métodos foram utilizados para resolução desse problema?
 
-- Resposta: 
+- Resposta: Com base em pesquisa foi utilizado os seguintes comandos, array.Length, Array.Append, .ToArray.
 
 
 
