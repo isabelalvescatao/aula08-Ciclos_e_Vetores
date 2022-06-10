@@ -4,14 +4,26 @@ String[] listaDeFilmes = { "Clube dos Cinco", "A Hora do Pesadelo", "Karatê Kid
 // 1.1. Apresenta todos os filmes da lista separados por ponto e vírgula.
 string apresentaTodosOsFilmesSeparadosPorPontoVirgula()
 {
-
+    string lista = " ";
+    Console.WriteLine(lista);
+    for (int indice = 0; indice < listaDeFilmes.Length; indice++)
+    {
+        lista += $"{listaDeFilmes[indice]}";
+        if (indice != (listaDeFilmes.Length - 1))
+        {
+            lista += "; ";
+        }
+    }
+    return lista;
 }
 
-// 1.1. Apresentar quantidade de filmes da lista.
+// 1.2. Apresentar quantidade de filmes da lista.
 int quantidadeTotalDeFilmes()
 {
-
+    int quantidadeTotal = listaDeFilmes.Length;
+    return quantidadeTotal;
 }
+
 
 // 1.3. Buscar o nome do filme de acordo com seu índice.
 string buscarNomeDoFilmePeloIndice(int indiceDoFilme)
