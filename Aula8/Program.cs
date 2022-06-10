@@ -36,13 +36,17 @@ String[] adicionaUmNovoFilmePeloSeuNome(string nomeDoFilme)
 {
 
 }
-
-// 1.5. Atualiza um filme a partir do seu índice na lista.
-String[] atualizarUmFilmePeloSeuIndice(int indiceDoFilme)
-{
-
-}
 */
+// 1.5. Atualiza um filme a partir do seu índice na lista.
+
+String[] atualizarUmFilmePeloSeuIndice(int indiceDoFilme, string filme)
+{
+    
+    listaDeFilmes[indiceDoFilme] = filme;
+    Console.WriteLine(filme);
+    return listaDeFilmes; 
+}
+
 
 // 1.6. Listar todos os filmes com seu índice/posição na lista.
 String[] listarTodosOsFilmesComSeuIndiceNaLista()
@@ -52,7 +56,6 @@ String[] listarTodosOsFilmesComSeuIndiceNaLista()
     for (count = 0; count < listaDeFilmes.Length; count++)
     {
         listaComIndice[count] = $"{count} - {listaDeFilmes[count]}";
-
     }
 
     return listaComIndice;
@@ -75,10 +78,10 @@ Console.WriteLine("1.3. Buscar um filme pelo indice", buscarNomeDoFilmePeloIndic
 
 // 1.4 Se o filme for Sexta-feira 13th, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky IV; Conan, o Bárbaro; Highlander, Sexta-feira 13th
 Console.WriteLine("1.4. Adiciona um filme pelo nome", adicionaUmNovoFilmePeloSeuNome("Sexta-feira 13th"));
-
-// 1.5 Se o índice for 3 e o nome for atualizado para Rocky III, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky III; Conan, o Bárbaro; Highlander, Sexta-feira 13th
-Console.WriteLine("1.5. Atualizar um filme pelo seu índice", atualizarUmFilmePeloSeuIndice(3));
 */
+// 1.5 Se o índice for 3 e o nome for atualizado para Rocky III, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky III; Conan, o Bárbaro; Highlander, Sexta-feira 13th
+Console.WriteLine($"5. Atualizar um filme pelo seu índice {string.Join("; ", atualizarUmFilmePeloSeuIndice(3, "Rocky III"))}");
+
 
 /* 1.6 Retorna 
 0 - Clube dos Cinco 
